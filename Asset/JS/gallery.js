@@ -97,3 +97,40 @@ index = Math.max(index-1,0);
 updateSlide();
 
 });
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxVideo = document.getElementById("lightbox-video");
+const closeBtn = document.querySelector(".close");
+
+// IMAGE CLICK
+document.querySelectorAll(".slide img").forEach(img => {
+    img.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+
+        lightboxImg.style.display = "block";
+        lightboxVideo.style.display = "none";
+
+        lightboxImg.src = img.src;
+    });
+});
+
+// VIDEO CLICK
+document.querySelectorAll(".slide video").forEach(video => {
+    video.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+
+        lightboxVideo.style.display = "block";
+        lightboxImg.style.display = "none";
+
+        lightboxVideo.src = video.src;
+        lightboxVideo.play();
+    });
+});
+
+// CLOSE
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxVideo.pause();
+});
