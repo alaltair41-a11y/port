@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALv's Basement</title>
+    <link rel="stylesheet" href="Asset\CSS\styles.css">
+</head>
+<body>  
+
+<header class="site-header">
+    <div class="container">
+        <a href="#" class="logo">ALv's Basement</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#features">Skills</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#download">Preview</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content container">
+        <h1>Discover My Personal Works</h1>
+        <p>Variants of works and projects</p>
+        <div class="hero-buttons">
+            <a href="#download" class="btn primary-btn">Contact</a>
+            <a href="#features" class="btn secondary-btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="features container">
+    <h2>Skills</h2>
+    <div class="feature-cards">
+
+            <div class="card card-edit">
+                <div class="card-content">
+                    <h3>Editing</h3>
+                    <p>Image and Video Editing</p>
+                </div>
+            </div>
+
+            <div class="card card-translation">
+                <div class="card-content">
+                    <h3>Translation</h3>
+                    <p>English - Japanese - Bahasa Indonesia.</p>
+                </div>
+            </div>
+
+            <div class="card card-programming">
+                <div class="card-content">
+                    <h3>Programming and Designing</h3>
+                    <p>Website Developer, 3D Environment Artist and more</p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img class="lightbox-img" id="lightbox-img">
+
+    <video class="lightbox-video" id="lightbox-video" controls></video>
+
+</div>
+
+<section class="gallery-section">
+
+<h2>Media Gallery</h2>
+
+<div class="slider">
+
+<button class="nav prev">&#10094;</button>
+
+<div class="slider-container">
+    <div class="slider-track">
+
+        <div class="slide"><img src="Asset/Image/g1a.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/3.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/v1a.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/v2a.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/v3a.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/web.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/sea.png" class="slider-img" alt="preview"></div>
+        <div class="slide"><img src="Asset/Image/last.png" class="slider-img" alt="preview"></div>
+
+
+    </div>
+</div>
+
+<button class="nav next">&#10095;</button>
+
+</div>
+
+</section>
+
+<section id="download" class="download container">
+    <h2>Contact</h2>
+    <p></p>
+    <div class="btn-group">
+        <a href="#" class="btn primary-btn">Whatsapp</a>
+        <a href="#" class="btn primary-btn">Discord</a>
+        <a href="#" class="btn primary-btn">Email</a>
+    </div>
+</section>
+
+<section class="compare-section">
+    <h2>3D Designing and Progamming</h2>
+    <p>Creating 3D world based from just a picture or video that based of realife, animation, game, and more.</p>
+
+    <div class="compare-container" id="compareBox">
+        <img src="Asset\Image\g1b.png" class="compare-img before" alt="Before">
+        <img src="Asset\Image\g1a.png" class="compare-img after" alt="After">
+
+        <div class="compare-handle" id="sliderHandle">
+            <span></span>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer container">
+    <div class="footer-social">
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+        <a href="#">Discord</a>
+    </div>
+    <p>&copy; ALv's Basement | All Rights Reserved</p>
+</footer>
+
+<script src="Asset/JS/script.js"></script>
+<script src="Asset/JS/gallery.js"></script>
+
+</body>
+</html>
